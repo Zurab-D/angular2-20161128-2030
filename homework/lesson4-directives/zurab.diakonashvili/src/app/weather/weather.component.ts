@@ -26,11 +26,11 @@ export class WeatherComponent implements OnInit {
           clearInterval(this.timer);
         }
         this.timer = setInterval(() => {
-            let maxCloudArr = this.cloudStylesArr.length;
-            let randCloud = rand(0, maxCloudArr);
+            let maxCloudArr = this.cloudStylesArr.length - 1;
+            let randCloud = rand(maxCloudArr);
             this.cloudClass = this.cloudStylesArr[randCloud];
-            this.airDegree = rand(0, 30);
-            this.waterDegree = rand(0, 30);
+            this.airDegree = rand(30);
+            this.waterDegree = rand(30);
         }, 3000);
     }
 

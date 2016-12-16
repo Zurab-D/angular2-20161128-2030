@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { rand } from '../lib/rand';
+//import { rand } from '../lib/rand';
 import { data } from '../data/data';
 
 
@@ -32,7 +32,7 @@ export class CityComponent implements OnInit {
     setInterval(() => {
       this.followers = rand(1000, 20000);
       this.following = rand(1000, 20000);
-      this.imageCity = '../images/' + this.imageCityArr[rand(0, 2)];
+      this.imageCity = '../images/' + this.imageCityArr[rand(2)];
     }, 3000)
   }*/
 
