@@ -17,9 +17,9 @@ export class CityComponent implements OnInit {
   @Input() set hotelSelect(id: number) {
     console.log(`city.hotelSelect(${id})`);
 
-    this.followers = data['hotel' + id].city.followers;
-    this.following = data['hotel' + id].city.following;
-    this.imageCity = '../images/' + data['hotel' + id].city.imageCity;
+    this.followers = data[id].city.followers;
+    this.following = data[id].city.following;
+    this.imageCity = '../images/' + data[id].city.imageCity;
   }
 
   constructor() { }

@@ -14,11 +14,12 @@ export class HotelsComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.setHotel(1);
+    this.setHotel(0);
   }
 
   setHotel(id: number) {
-    this.bigPic = '../images/' + data['hotel' + id].bigPicture;
+    console.log(data[id].bigPicture);
+    this.bigPic = '../images/' + data[id].bigPicture;
     this.onHotelSelect.emit(id);
   }
 }

@@ -37,9 +37,9 @@ export class WeatherComponent implements OnInit {
   @Input() set hotelSelect(id: number) {
     console.log(`weather.hotelSelect(${id})`);
 
-    this.cloudClass = data['hotel' + id].weather.cloud;
-    this.airDegree = data['hotel' + id].weather.airDegree;
-    this.waterDegree = data['hotel' + id].weather.waterDegree;
+    this.cloudClass = data[id].weather.cloud;
+    this.airDegree = data[id].weather.airDegree;
+    this.waterDegree = data[id].weather.waterDegree;
 
     this.randomizeCloudClass();
   }
