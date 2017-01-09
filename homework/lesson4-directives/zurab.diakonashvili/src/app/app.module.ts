@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { HotelsComponent } from './hotels/hotels.component';
 import { WeatherComponent } from './weather/weather.component';
 import { CityComponent } from './city/city.component';
+import { HotelComponent } from './hotels/hotel/hotel.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HotelsComponent,
     WeatherComponent,
-    CityComponent
+    CityComponent,
+    HotelComponent
   ],
   imports: [
     BrowserModule,

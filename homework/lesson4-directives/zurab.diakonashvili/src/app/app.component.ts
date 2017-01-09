@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { hotel } from './hotel';
+// import { data } from './data/data';
 
 @Component({
   selector: 'app-root',
@@ -7,10 +9,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Hot Weather Widget';
-  selectedHotelId: number = 1;
+  selectedHotelId: number = 0;
+
+  /*constructor() {
+    data.forEach
+  }*/
 
   hotelSelect(id) {
     this.selectedHotelId = id;
-    console.log(`app.hotelSelect(${id})`);
+    // console.log(`app.hotelSelect(${id})`);
   }
 }
